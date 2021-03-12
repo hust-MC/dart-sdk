@@ -1,0 +1,14 @@
+include: package:pedantic/analysis_options.1.9.0.yaml
+
+analyzer:
+  strong-mode:
+    implicit-casts: false
+  errors:
+    # Increase the severity of the unused_import hint.
+    unused_import: warning
+  exclude:
+    - test/data/**
+linter:
+  rules:
+    - empty_statements
+    - unnecessary_brace_in_string_interps

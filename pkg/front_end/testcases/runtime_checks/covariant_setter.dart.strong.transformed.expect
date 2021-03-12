@@ -1,0 +1,31 @@
+library test;
+import self as self;
+import "dart:core" as core;
+
+typedef F<contravariant T extends core::Object* = dynamic> = (T*) →* void;
+class C<T extends core::Object* = dynamic> extends core::Object {
+  generic-covariant-impl field self::C::T* x = null;
+  synthetic constructor •() → self::C<self::C::T*>*
+    : super core::Object::•()
+    ;
+  set y(generic-covariant-impl self::C::T* value) → void {}
+  method f(generic-covariant-impl self::C::T* value) → void {
+    this.{self::C::x} = value;
+    this.{self::C::y} = value;
+  }
+  abstract member-signature get _identityHashCode() → core::int*;
+  abstract member-signature method _instanceOf(dynamic instantiatorTypeArguments, dynamic functionTypeArguments, dynamic type) → core::bool*;
+  abstract member-signature method _simpleInstanceOf(dynamic type) → core::bool*;
+  abstract member-signature method _simpleInstanceOfTrue(dynamic type) → core::bool*;
+  abstract member-signature method _simpleInstanceOfFalse(dynamic type) → core::bool*;
+  abstract member-signature operator ==(dynamic other) → core::bool*;
+  abstract member-signature get hashCode() → core::int*;
+  abstract member-signature method toString() → core::String*;
+  abstract member-signature method noSuchMethod(core::Invocation* invocation) → dynamic;
+  abstract member-signature get runtimeType() → core::Type*;
+}
+static method g(self::C<core::num*>* c) → void {
+  c.{self::C::x} = 1.5;
+  c.{self::C::y} = 1.5;
+}
+static method main() → void {}

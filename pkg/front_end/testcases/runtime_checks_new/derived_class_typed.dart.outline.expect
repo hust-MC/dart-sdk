@@ -1,0 +1,36 @@
+library test;
+import self as self;
+import "dart:core" as core;
+
+class B<T extends core::Object* = dynamic> extends core::Object {
+  synthetic constructor •() → self::B<self::B::T*>*
+    ;
+  method f(generic-covariant-impl self::B::T* x) → void
+    ;
+  method g({generic-covariant-impl self::B::T* x}) → void
+    ;
+  method h<generic-covariant-impl U extends self::B::T* = self::B::T*>() → void
+    ;
+  abstract member-signature get _identityHashCode() → core::int*;
+  abstract member-signature method _instanceOf(dynamic instantiatorTypeArguments, dynamic functionTypeArguments, dynamic type) → core::bool*;
+  abstract member-signature method _simpleInstanceOf(dynamic type) → core::bool*;
+  abstract member-signature method _simpleInstanceOfTrue(dynamic type) → core::bool*;
+  abstract member-signature method _simpleInstanceOfFalse(dynamic type) → core::bool*;
+  abstract member-signature operator ==(dynamic other) → core::bool*;
+  abstract member-signature get hashCode() → core::int*;
+  abstract member-signature method toString() → core::String*;
+  abstract member-signature method noSuchMethod(core::Invocation* invocation) → dynamic;
+  abstract member-signature get runtimeType() → core::Type*;
+}
+class C extends self::B<core::int*> {
+  synthetic constructor •() → self::C*
+    ;
+}
+static method g1(self::B<core::num*>* b) → void
+  ;
+static method g2(self::C* c) → void
+  ;
+static method test() → void
+  ;
+static method main() → void
+  ;

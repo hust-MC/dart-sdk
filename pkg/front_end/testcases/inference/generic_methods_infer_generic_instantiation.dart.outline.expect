@@ -1,0 +1,55 @@
+library test;
+import self as self;
+import "dart:core" as core;
+
+import "dart:math" as math;
+import "dart:math";
+
+class C extends core::Object {
+  synthetic constructor •() → self::C*
+    ;
+  method m<T extends core::num* = core::num*>(self::C::m::T* x, self::C::m::T* y) → self::C::m::T*
+    ;
+  abstract member-signature get _identityHashCode() → core::int*;
+  abstract member-signature method _instanceOf(dynamic instantiatorTypeArguments, dynamic functionTypeArguments, dynamic type) → core::bool*;
+  abstract member-signature method _simpleInstanceOf(dynamic type) → core::bool*;
+  abstract member-signature method _simpleInstanceOfTrue(dynamic type) → core::bool*;
+  abstract member-signature method _simpleInstanceOfFalse(dynamic type) → core::bool*;
+  abstract member-signature operator ==(dynamic other) → core::bool*;
+  abstract member-signature get hashCode() → core::int*;
+  abstract member-signature method toString() → core::String*;
+  abstract member-signature method noSuchMethod(core::Invocation* invocation) → dynamic;
+  abstract member-signature get runtimeType() → core::Type*;
+}
+static method test() → dynamic
+  ;
+static method takeIII((core::int*, core::int*) →* core::int* fn) → void
+  ;
+static method takeDDD((core::double*, core::double*) →* core::double* fn) → void
+  ;
+static method takeIDI((core::double*, core::int*) →* core::int* fn) → void
+  ;
+static method takeDID((core::int*, core::double*) →* core::double* fn) → void
+  ;
+static method takeIDN((core::double*, core::int*) →* core::num* fn) → void
+  ;
+static method takeDIN((core::int*, core::double*) →* core::num* fn) → void
+  ;
+static method takeIIN((core::int*, core::int*) →* core::num* fn) → void
+  ;
+static method takeDDN((core::double*, core::double*) →* core::num* fn) → void
+  ;
+static method takeNNN((core::num*, core::num*) →* core::num* fn) → void
+  ;
+static method takeOON((core::Object*, core::Object*) →* core::num* fn) → void
+  ;
+static method takeOOO((core::Object*, core::Object*) →* core::num* fn) → void
+  ;
+static method takeOOI((core::Object*, core::Object*) →* core::int* fn) → void
+  ;
+static method takeIIO((core::int*, core::int*) →* core::Object* fn) → void
+  ;
+static method takeDDO((core::double*, core::double*) →* core::Object* fn) → void
+  ;
+static method main() → dynamic
+  ;

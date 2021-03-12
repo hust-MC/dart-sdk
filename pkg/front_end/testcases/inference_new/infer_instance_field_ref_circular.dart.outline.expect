@@ -1,0 +1,33 @@
+library test;
+//
+// Problems in library:
+//
+// pkg/front_end/testcases/inference_new/infer_instance_field_ref_circular.dart:11:7: Error: Can't infer the type of 'b': circularity found during type inference.
+// Specify the type explicitly.
+//   var b = /*@ returnType=() ->* invalid-type */ () => x;
+//       ^
+//
+import self as self;
+import "dart:core" as core;
+
+class A extends core::Object {
+  field invalid-type b;
+  field () →* () →* invalid-type c;
+  synthetic constructor •() → self::A*
+    ;
+  abstract member-signature get _identityHashCode() → core::int*;
+  abstract member-signature method _instanceOf(dynamic instantiatorTypeArguments, dynamic functionTypeArguments, dynamic type) → core::bool*;
+  abstract member-signature method _simpleInstanceOf(dynamic type) → core::bool*;
+  abstract member-signature method _simpleInstanceOfTrue(dynamic type) → core::bool*;
+  abstract member-signature method _simpleInstanceOfFalse(dynamic type) → core::bool*;
+  abstract member-signature operator ==(dynamic other) → core::bool*;
+  abstract member-signature get hashCode() → core::int*;
+  abstract member-signature method toString() → core::String*;
+  abstract member-signature method noSuchMethod(core::Invocation* invocation) → dynamic;
+  abstract member-signature get runtimeType() → core::Type*;
+}
+static field self::A* a;
+static field () →* invalid-type x;
+static field () →* () →* () →* invalid-type y;
+static method main() → dynamic
+  ;
